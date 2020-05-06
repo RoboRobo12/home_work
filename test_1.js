@@ -17,7 +17,9 @@ world */
 let myCars = [ 'Opel','VW','Porshe','BMW','Mercedes' ];
 console.log(myCars);
 
-delete myCars [0],[4];
+delete myCars [0];
+delete myCars [4];
+
 console.log(myCars);
 
 // 4) Створіть "об'єкт" який буде містити 5 довільних ключів із довільними значеннями.
@@ -92,7 +94,7 @@ switch (qestion) {
         console.log ('a')
          break;
     }
-    case '5' : {
+    case 'norm' : {
         console.log('b')
          break;
     }
@@ -104,7 +106,7 @@ switch (qestion) {
 
 if (qestion === 'fine'){
     console.log("a")
- } else if (cat === 'Norm') {
+ } else if ( qestion === 'Norm') {
     console.log("b")
  } else {
     console.log("c")
