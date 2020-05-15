@@ -34,7 +34,7 @@ console.log(cat.toLowerCase());
 
 // 7. Створіть змінну і присвойте в неї дату вашого народження.
 
-let myBirthday = new Date( 1996, 03, 08);
+let myBirthday = new Date( 1997, 03, 08);
 
 console.log(myBirthday);
 
