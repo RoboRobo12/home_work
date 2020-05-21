@@ -46,6 +46,20 @@ const showMyFullName = new Person (person.getFullName());
 showMyName.getName();
 showMyFullName.getFullName();
 
+//option 2
+
+function Person(name){
+  this.name = name;
+  this.getName = () => this.name
+  this.getFullName = () => this.name
+};
+
+const showMyName = new Person ('Robert');
+const showMyFullName = new Person ('Robert Kulik');
+
+showMyName.getName();
+showMyFullName.getFullName();
+
 //4 Класу
 
 class Old {
@@ -64,6 +78,27 @@ class Old {
 const robokop = new Old (person.getName());
 const robokopFull = new Old (person.getFullName());
 
-robokop.getMyName();
+robokop.getName();
 robokopFull.getFullName();
 
+//option 2
+
+class Old {
+  constructor(name){
+      this.name = name;
+   }
+   getName = () =>{
+     return this.name
+   };
+   getFullName = () =>{
+     return this.name
+   };
+ 
+ };
+
+
+const robokop = new Old ('Robert');
+const robokopFull = new Old ('Robert Kulik');
+
+robokop.getName();
+robokopFull.getFullName();
